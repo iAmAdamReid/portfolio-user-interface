@@ -1,17 +1,30 @@
+@import "variables.less";
+
 /* HOME PAGE */
 .home-banner {
     position: relative;
-    top: 40px;
+    top: 0px;
   
-    img {
+    .jumbotron{
       width: 100%;
-      height: auto;
+      height: 100vh;
+      background: url('../img/home/home-jumbotron.png');
+      background-size: cover;
+
+      @media @mobile {
+          height: 320px;
+          background: url('../img/home/home-mobile-jumbotron.png');
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
     }
+
   
     h2 {
       position: absolute;
       bottom: 0;
-      margin: 20px 10%;
+      margin: 40px 10%;
       text-align: left;
       font-size: 64px;
       color: white;
@@ -21,6 +34,7 @@
       @media @mobile {
         font-size: 3rem;
         line-height: 3.5rem;
+
       }
     }
   }
@@ -41,6 +55,32 @@
       margin-top: 60px;
       flex-flow: row wrap;
       display: flex;
+
+      #card-1{
+        background: url('../img/home/home-img-1.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 275px;
+
+        @media @mobile {
+          background: url('../img/home/home-mobile-img-1.png');
+          background-size: cover;
+          width: 100%;
+        }
+      }
+
+      #card-2{
+        background: url('../img/home/home-img-2.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 275px;
+
+        @media @mobile{
+          background: url('../img/home/home-mobile-img-2.png');
+          background-size: cover;
+          width: 100%;
+        }
+      }
   
       @media @mobile {
         flex-flow: column nowrap;
@@ -101,10 +141,6 @@
         width: 100%;
         order: -1;
         margin: 20px 0px;
-      }
-  
-      img {
-        width: 100%;
       }
     }
   }

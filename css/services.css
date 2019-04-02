@@ -1,0 +1,100 @@
+/* SERVICES PAGE */
+.services-banner {
+  width: 100%;
+  position: relative;
+  top: 40px;
+}
+.services-banner img {
+  width: 100%;
+}
+.services-banner h1 {
+  font-weight: bold;
+  position: absolute;
+  bottom: 0;
+  margin: 20px 10%;
+  font-size: 3rem;
+  color: white;
+}
+.services-content {
+  margin-top: 60px;
+}
+.services-about {
+  color: black;
+  padding: 30px 0px;
+  font-size: 1rem;
+}
+.services-tabs {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 600px) {
+  .services-tabs {
+    flex-flow: column nowrap;
+  }
+}
+.services-tabs .tab-link {
+  padding: 10px 0px;
+  border: 1px solid black;
+  width: 130px;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .services-tabs .tab-link {
+    width: 100%;
+    margin: 10px 0px;
+  }
+}
+.services-tabs .tab-link:hover {
+  background: #222222;
+  cursor: pointer;
+  color: white;
+}
+.services-tabs .active-link {
+  background: #5e9fb9;
+  color: white;
+}
+.card {
+  margin: 40px 0px;
+  display: none;
+}
+@media (max-width: 600px) {
+  .card {
+    margin: 20px 0px;
+  }
+}
+.card h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 10px 0px;
+}
+.card .card-container {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 600px) {
+  .card .card-container {
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+}
+.card .card-container .card-text {
+  width: 50%;
+}
+@media (max-width: 600px) {
+  .card .card-container .card-text {
+    width: 100%;
+    margin: 10px 0px;
+  }
+}
+.card .card-container .card-img {
+  width: 50%;
+}
+@media (max-width: 600px) {
+  .card .card-container .card-img {
+    width: 100%;
+    margin: 10px 0px;
+  }
+}
+.card .card-container .card-img img {
+  width: 100%;
+}
