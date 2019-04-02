@@ -2,9 +2,9 @@
 ## S&J Architects
 ### HTML, LESS CSS, JavaScript, GreenSock
 
-The "S&J Architects" website is a mock website built for a fictional construction company according to a set of given design specs. The objective was to build a mobile-responsive static website using HTML, JS, and the LESS CSS preprocessor.
+The "S&J Architects" website is a mock website built for a fictional architecture and construction company according to a set of given [design specs](https://github.com/iAmAdamReid/portfolio-user-interface/tree/master/DesignFiles). The objective was to build a mobile-responsive static website using HTML, JS, and the LESS CSS preprocessor.
 
-The website is responsive to mobile widths breaking at 600px, and uses a combination of JavaScript and GreenSock animations in order to accomplish the menu overlay, the services menu, and the projects carousel.
+The website is responsive to mobile widths breaking at 600px, and uses a combination of JavaScript and [GreenSock](https://www.greensock.com) animations in order to implement the navigation menu overlay, the services menu, and the projects carousel.
 
 Built during User Interface Project Week at Lambda School by Adam Reid.
 
