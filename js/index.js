@@ -203,48 +203,54 @@ if (document.title === 'Services') {
 
 /*** MOBILE IMAGES SOURCE SWAP JAVASCRIPT ***/
 
-class ImageSwap {
-    constructor(element) {
-        this.element = element;
+/** This code has been replaces by using CSS background images.
+ * This was a personal exercise to demonstrate on-the-fly image source retrieval
+ * by monitoring the DOM.
+ * 
+ */
 
-        this.imgData = element.dataset.tab;
+// class ImageSwap {
+//     constructor(element) {
+//         this.element = element;
 
-        this.pageTitle = document.title.toLowerCase();
+//         this.imgData = element.dataset.tab;
 
-        window.addEventListener('load', () => {
-            if (window.innerWidth <= 500) {
-                this.mobileSrc();
-            } else if (window.innerWidth > 500) {
-                this.desktopSrc();
-            }
-        });
+//         this.pageTitle = document.title.toLowerCase();
 
-        window.addEventListener('resize', () => {
-            if (window.innerWidth <= 500) {
-                this.mobileSrc();
-            } else if (window.innerWidth > 500) {
-                this.desktopSrc();
-            }
-        });
-    }
+//         window.addEventListener('load', () => {
+//             if (window.innerWidth <= 500) {
+//                 this.mobileSrc();
+//             } else if (window.innerWidth > 500) {
+//                 this.desktopSrc();
+//             }
+//         });
 
-    mobileSrc() {
-        if (this.imgData !== 'exclude') {
-            this.element.src = `./img/${this.pageTitle}/${this.pageTitle}-mobile-${this.imgData}.png`;
-        }
-    }
+//         window.addEventListener('resize', () => {
+//             if (window.innerWidth <= 500) {
+//                 this.mobileSrc();
+//             } else if (window.innerWidth > 500) {
+//                 this.desktopSrc();
+//             }
+//         });
+//     }
 
-    desktopSrc() {
-        if (this.imgData !== 'exclude') {
-            this.element.src = `./img/${this.pageTitle}/${this.pageTitle}-${this.imgData}.png`;
-        }
-    }
+//     mobileSrc() {
+//         if (this.imgData !== 'exclude') {
+//             this.element.src = `./img/${this.pageTitle}/${this.pageTitle}-mobile-${this.imgData}.png`;
+//         }
+//     }
 
-}
+//     desktopSrc() {
+//         if (this.imgData !== 'exclude') {
+//             this.element.src = `./img/${this.pageTitle}/${this.pageTitle}-${this.imgData}.png`;
+//         }
+//     }
 
-let images = document.querySelectorAll('img');
+// }
 
-images = Array.from(images).map(images => new ImageSwap(images));
+// let images = document.querySelectorAll('img');
+
+// images = Array.from(images).map(images => new ImageSwap(images));
 
 /*** END MOBILE IMAGES SOURCE SWAP JAVASCRIPT ***/
 
