@@ -42,6 +42,7 @@
   
   
   .home-content {
+    width: 100%;
     margin-top: 60px;
     display: flex;
     flex-flow: row wrap;
@@ -52,31 +53,34 @@
     }
   
     .home-row {
+      width: 100%;
       margin-top: 60px;
-      flex-flow: row wrap;
       display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      
 
       #card-1{
-        background: url('../img/home/home-img-1.png');
-        background-size: cover;
+        background: url('../img/home/home-img-1.png') right center;
+        background-size: contain;
         background-repeat: no-repeat;
         height: 275px;
 
         @media @mobile {
-          background: url('../img/home/home-mobile-img-1.png');
+          background: url('../img/home/home-mobile-img-1.png') center center;
           background-size: cover;
           width: 100%;
         }
       }
 
       #card-2{
-        background: url('../img/home/home-img-2.png');
-        background-size: cover;
+        background: url('../img/home/home-img-2.png') left center;
+        background-size: contain;
         background-repeat: no-repeat;
         height: 275px;
 
         @media @mobile{
-          background: url('../img/home/home-mobile-img-2.png');
+          background: url('../img/home/home-mobile-img-2.png') center center;
           background-size: cover;
           width: 100%;
         }
@@ -91,7 +95,7 @@
     .home-text {
       width: 45%;
       align-self: center;
-      padding: 0 2.5%;
+      text-align: justify;
   
       @media @mobile {
         width: 100%;
@@ -172,10 +176,10 @@
       position: relative;
       width: 100%;
       margin-bottom: 60px;
-  
-      img {
-        width: 100%;
-        display: block;
+      height: 230px;
+
+      @media @mobile{
+        height: 200px;
       }
   
       .project-title {
@@ -199,5 +203,36 @@
           margin: 0px 20px;
         }
       }
+    }
+  }
+
+  #project-villas{
+    background: url('../img/home/home-villas-img.png') center center;
+    background-size: cover;
+
+    @media @mobile{
+      background: url('../img/home/home-mobile-villas-img.png') center center;
+      background-size: cover;
+    }
+  }
+
+  #project-outskirts{
+    background: url('../img/home/home-outskirts-img.png') center center;
+    background-size: cover;
+
+    @media @mobile{
+      background: url('../img/home/home-mobile-outskirts-img.png') center center;
+      background-size: cover;
+    }
+  }
+
+
+  #project-the-blocks{
+    background: url('../img/home/home-the-blocks-img.png') center center;
+    background-size: cover;
+
+    @media @mobile{
+      background: url('../img/home/home-mobile-the-blocks-img.png') center center;
+      background-size: cover;
     }
   }

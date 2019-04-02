@@ -172,6 +172,7 @@ table {
   }
 }
 .home-content {
+  width: 100%;
   margin-top: 60px;
   display: flex;
   flex-flow: row wrap;
@@ -183,32 +184,34 @@ table {
   }
 }
 .home-content .home-row {
+  width: 100%;
   margin-top: 60px;
-  flex-flow: row wrap;
   display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
 }
 .home-content .home-row #card-1 {
-  background: url('../img/home/home-img-1.png');
-  background-size: cover;
+  background: url('../img/home/home-img-1.png') right center;
+  background-size: contain;
   background-repeat: no-repeat;
   height: 275px;
 }
 @media (max-width: 600px) {
   .home-content .home-row #card-1 {
-    background: url('../img/home/home-mobile-img-1.png');
+    background: url('../img/home/home-mobile-img-1.png') center center;
     background-size: cover;
     width: 100%;
   }
 }
 .home-content .home-row #card-2 {
-  background: url('../img/home/home-img-2.png');
-  background-size: cover;
+  background: url('../img/home/home-img-2.png') left center;
+  background-size: contain;
   background-repeat: no-repeat;
   height: 275px;
 }
 @media (max-width: 600px) {
   .home-content .home-row #card-2 {
-    background: url('../img/home/home-mobile-img-2.png');
+    background: url('../img/home/home-mobile-img-2.png') center center;
     background-size: cover;
     width: 100%;
   }
@@ -222,7 +225,7 @@ table {
 .home-content .home-text {
   width: 45%;
   align-self: center;
-  padding: 0 2.5%;
+  text-align: justify;
 }
 @media (max-width: 600px) {
   .home-content .home-text {
@@ -297,10 +300,12 @@ table {
   position: relative;
   width: 100%;
   margin-bottom: 60px;
+  height: 230px;
 }
-.home-recent .project-img img {
-  width: 100%;
-  display: block;
+@media (max-width: 600px) {
+  .home-recent .project-img {
+    height: 200px;
+  }
 }
 .home-recent .project-img .project-title {
   position: absolute;
@@ -322,6 +327,36 @@ table {
 .home-recent .project-img .project-title h2 {
   letter-spacing: 3px;
   margin: 0px 20px;
+}
+#project-villas {
+  background: url('../img/home/home-villas-img.png') center center;
+  background-size: cover;
+}
+@media (max-width: 600px) {
+  #project-villas {
+    background: url('../img/home/home-mobile-villas-img.png') center center;
+    background-size: cover;
+  }
+}
+#project-outskirts {
+  background: url('../img/home/home-outskirts-img.png') center center;
+  background-size: cover;
+}
+@media (max-width: 600px) {
+  #project-outskirts {
+    background: url('../img/home/home-mobile-outskirts-img.png') center center;
+    background-size: cover;
+  }
+}
+#project-the-blocks {
+  background: url('../img/home/home-the-blocks-img.png') center center;
+  background-size: cover;
+}
+@media (max-width: 600px) {
+  #project-the-blocks {
+    background: url('../img/home/home-mobile-the-blocks-img.png') center center;
+    background-size: cover;
+  }
 }
 /* NAVIGATION */
 header {
@@ -757,7 +792,7 @@ body p {
   color: #222222;
 }
 .container {
-  max-width: 80%;
+  width: 80%;
   margin: 0 auto;
   line-height: 24px;
 }
