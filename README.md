@@ -1,4 +1,6 @@
-# User Interface
+# User Interface Project
+## S&J Architects
+### HTML, LESS CSS, JavaScript, GreenSock
 
 The "S&J Architects" website is a mock website built for a fictional construction company according to a set of given design specs. The objective was to build a mobile-responsive static website using HTML, JS, and the LESS CSS preprocessor.
 
